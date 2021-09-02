@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', fn() => view('home'));
+
+Route::get('/learn', fn() => view('learn'));
+
+Route::get('/fingerspelling', fn() => view('fingerspelling'));
+
+Route::get('/contact', fn() => view('contact'));
+
+Route::get('/forum', fn() => view('forum'));
